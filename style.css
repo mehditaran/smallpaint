@@ -1,0 +1,76 @@
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  background-color: lightgoldenrodyellow;
+}
+
+#rangeColor {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: red;
+  margin-right: 10px;  
+}
+
+.dropdown-menu {
+  padding: 15px !important;
+}
+
+#color_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#color_box_item{
+  border: 1px solid lightgrey;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  padding: 1px;
+}
+
+#color_box_item div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;  
+}
+#color_box_item:nth-child(1) div{
+  background-color:red;
+}
+
+#color_box_item:nth-child(2) div{
+  background-color: green;
+}
+
+#color_box_item:nth-child(3) div{
+  background-color: blue;
+}
+  
+#select_color{
+  display: flex;  
+  align-items: center;  
+}
+
+#select_color input,label{
+margin-right: 10px;
+}
+
+canvas{
+  width: 850px;
+  height: 650px;  
+  background-color: white;
+  margin: 50px;
+}
