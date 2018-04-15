@@ -23,27 +23,29 @@
         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">View</a>
       </li>
     </ul>
-    <div class="tab-content" id="myTabContent">
+    <div class="tab-content container-fluid" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div class="row">
-          <div id="select_color" class="col-md-5 offset-md-4">
-            <div id="rangeColor"></div>
-            <label for="red">Red</label>
-            <input type="range" name="red" id="red" min=0 max=255 value="0">
-            <label for="green">Green</label>
-            <input type="range" name="green" id="green" min=0 max=255 value="0">
-            <label for="Blue">Blue</label>
-            <input type="range" name="Blue" id="Blue" min=0 max=255 value="0">
-            <a href="#" class="btn btn-primary">create color</a>
+          <div id="select_color" class="col-md-6 col-sm">
+            <div id="rangeColor" class="col-md-1"></div>
+            <div class="col-md-11">
+              <label for="red">Red</label>
+              <input type="range" name="red" id="red" min=0 max=255 value="0">
+              <label for="green">Green</label>
+              <input type="range" name="green" id="green" min=0 max=255 value="0">
+              <label for="Blue">Blue</label>
+              <input type="range" name="Blue" id="Blue" min=0 max=255 value="0">
+              <a href="#" class="btn btn-primary">create color</a>
+            </div>            
           </div>
-          <div id="color_box" class="col-md-3">
-            <div id="color_box_item">
+          <div id="color_box" class="col-md-6 col-sm">
+            <div class="color_box_item">
               <div></div>
             </div>
-            <div id="color_box_item">
-              <div></div>
+            <div class="color_box_item">
+              <div class="selected"></div>
             </div>
-            <div id="color_box_item">
+            <div class="color_box_item">
               <div></div>
             </div>
           </div>
@@ -55,13 +57,13 @@
   </section>
   <section id="main">
     <canvas></canvas>
-  </section>
-
+  </section>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
+  <script src="app.js"></script>
   <script>
-    $('.dropdown-toggle').dropdown();
+    
   </script>
 </body>
 
